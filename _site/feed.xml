@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manone</title>
+    <description>Manone的博客 中老年码农</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 26 Nov 2015 15:59:46 +0800</pubDate>
+    <lastBuildDate>Thu, 26 Nov 2015 15:59:46 +0800</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>First Blog</title>
+        <description>
+&lt;p&gt;总想将自己工作中的一些弯路、坑以及一些有用的东西记录下来，可惜要么工作太忙，要么自己太懒，一直没有落实下来，好在Github上发现了这么一个简单易用的Blog系统，套用了下，希望能将工作中的那些坑和一些有用的轮子都标示出来。一点一滴的积累。   &lt;/p&gt;
+
+&lt;p&gt;Blog定位为技术交流&lt;/p&gt;
+
+&lt;p&gt;Android | JAVA |Flex 为主，一边学习一边积累&lt;/p&gt;
+</description>
+        <pubDate>Thu, 26 Nov 2015 22:17:14 +0800</pubDate>
+        <link>/2015/11/26/firstblog/</link>
+        <guid isPermaLink="true">/2015/11/26/firstblog/</guid>
+        
+        
+        <category>github</category>
+        
+      </item>
+    
+  </channel>
+</rss>
