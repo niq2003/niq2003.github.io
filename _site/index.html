@@ -31,13 +31,19 @@
 
   <link rel="stylesheet" href="/static/google-code-prettify/tomorrow.css">
   <script src="/static/google-code-prettify/prettify.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $("pre").addClass("prettyprint");
+      prettyPrint();
+    });
+  </script>
 
 	<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
 	<!-- <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/railscasts.min.css"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai.min.css"> -->
 	<!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/languages/dos.min.js"></script> -->
-	<script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>-->
+	<!-- <script>hljs.initHighlightingOnLoad();</script>-->
 
 	<script>
 	var _hmt = _hmt || [];
@@ -53,7 +59,7 @@
 
 
  <!--  <body data-spy="scroll" data-target="#myAffix"> -->
-  <body onload="prettyPrint()">
+  <body>
 
     <header>
 
