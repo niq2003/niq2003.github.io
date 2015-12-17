@@ -335,7 +335,8 @@ public class ImagePreviewActivity extends Activity {
 </code>
 </pre>
 布局文件：image_preview_layout
-<pre class="prettyprint lang-xml">
+<pre>
+<code class="language-xml">
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -384,6 +385,7 @@ public class ImagePreviewActivity extends Activity {
         android:textColor="@color/c3"/>
 
 </RelativeLayout>
+</code>
 </pre>
 
 <pre>
@@ -481,7 +483,7 @@ public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter
 
 最后将ImagePreViewActivity的theme设置成dialog的样式
 <pre>
-<code>
+<code class="language-xml">
 <activity
     android:name="ImagePreviewActivity"
     android:screenOrientation="portrait"
@@ -491,7 +493,7 @@ public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter
 </pre>
 
 <pre>
-<code>
+<code class="language-xml">
 <style name="dialogStyle" parent="@android:style/Theme.Dialog">
     <item name="android:windowFrame">@android:color/transparent</item>
     <item name="android:windowIsFloating">true</item>
