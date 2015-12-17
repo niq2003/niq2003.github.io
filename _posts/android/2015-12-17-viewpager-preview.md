@@ -420,24 +420,8 @@ public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         if (mSetupListener != null) mSetupListener.onSetupGestureView(holder.image);
         holder.image.getController().resetState();
-        String uri = mUrls[position];
-        ULog.logd(TAG," onBindViewHolder uri = ",uri);
-        String url = uri;
-        if(ImageUtil.checkIsNetworkUri(uri)) {
-            url = UUtil.getSoaThumUrl(mUrls[position], UConfig.screenWidth, UConfig.screenWidth);
-            ImageLoader.getInstance().displayImage(url, holder.image);
-        }else{
-            Bitmap bitmap = BitmapUtil.getBitmapinSampleSizeFromPath
-                    (mContext, url, UConfig.screenWidth, UConfig.screenWidth);
-            ULog.logd(TAG, " onBindViewHolder uri = ", uri, " size = ", String.valueOf(UConfig.screenWidth));
-            if(bitmap != null){
-                ULog.logd(TAG, " onBindViewHolder uri = ", uri
-                        , " width = ", String.valueOf(bitmap.getWidth())
-                        ," height =", String.valueOf(bitmap.getHeight()));
-            }
-            holder.image.setImageBitmap(bitmap);
-        }
-
+        String url = mUrls[position];
+        ImageLoader.getInstance().displayImage(url, holder.image);
     }
 
     @Override
@@ -492,7 +476,8 @@ public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter
 <activity
     android:name="ImagePreviewActivity"
     android:screenOrientation="portrait"
-    android:theme="@style/dialogStyle" />
+    android:theme="@style/dialogStyle">
+</activity>
 </pre>
 <pre class="prettyprint lang-xml>
 <style name="dialogStyle" parent="@android:style/Theme.Dialog">
