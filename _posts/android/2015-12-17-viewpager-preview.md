@@ -16,7 +16,7 @@ excerpt: ViewPager 图片预览。
 直接上代码
 
 继承GestureImageView，增加显示，消失过渡效果
-```java
+```javascript
 import android.animation.Animator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
@@ -160,8 +160,8 @@ public class FadingGestureImageView extends GestureImageView {
 }
 ```
 
-弹出的预览框，用Activity实现,里面的［ReboundViewPager］（http://niq2003.github.io/2015/11/26/viewpager-preview/）可换成ViewPager。
-```java
+弹出的预览框，用Activity实现,里面的[ReboundViewPager](http://niq2003.github.io/2015/11/26/viewpager-preview/)可换成ViewPager。
+```javascript
 /**
  * 图片预览
  */
@@ -331,7 +331,7 @@ public class ImagePreviewActivity extends Activity {
   }
 ```
 布局文件：image_preview_layout
-```xml
+```javascript
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -382,7 +382,7 @@ public class ImagePreviewActivity extends Activity {
 </RelativeLayout>
 
 ```
-```java
+```javascript
 public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter.ViewHolder> implements GestureController.OnGestureListener {
 
     private static final String TAG = ImagePreviewAdapter.class.getSimpleName();
@@ -505,4 +505,4 @@ public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter
     <item name="android:windowAnimationStyle">@null</item>
 </style>
 ```
-第一次贴代码，有些乱～
+第一次贴代码，有些乱,凑合着看～
