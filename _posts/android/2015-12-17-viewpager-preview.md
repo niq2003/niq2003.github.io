@@ -16,6 +16,7 @@ excerpt: ViewPager 图片预览。
 直接上代码
 
 继承GestureImageView，增加显示，消失过渡效果
+<pre>
 <code class="language-java">
 import android.animation.Animator;
 import android.animation.PropertyValuesHolder;
@@ -159,9 +160,11 @@ public class FadingGestureImageView extends GestureImageView {
 
 }
 </code>
+</pre>
 
 弹出的预览框，用Activity实现,里面的[ReboundViewPager](http://niq2003.github.io/2015/11/26/viewpager-preview/)可换成ViewPager。
-<pre class="prettyprint lang-java">
+<pre>
+<code class="language-java">
 /**
  * 图片预览
  */
@@ -329,9 +332,11 @@ public class ImagePreviewActivity extends Activity {
         finish();
     }
   }
+</code>
 </pre>
 布局文件：image_preview_layout
-<pre class="prettyprint lang-xml">
+<pre>
+<code class="language-xml">
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -380,8 +385,10 @@ public class ImagePreviewActivity extends Activity {
         android:textColor="@color/c3"/>
 
 </RelativeLayout>
+</code>
 </pre>
-<pre class="prettyprint lang-java">
+<pre>
+<code class="language-java">
 public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter.ViewHolder> implements GestureController.OnGestureListener {
 
     private static final String TAG = ImagePreviewAdapter.class.getSimpleName();
@@ -470,16 +477,20 @@ public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter
         return mImageView;
     }
 }
+</code>
 </pre>
 最后将ImagePreViewActivity的theme设置成dialog的样式
-<pre class="prettyprint lang-xml">
+<pre>
+<code class="language-xml">
 <activity
     android:name="ImagePreviewActivity"
     android:screenOrientation="portrait"
     android:theme="@style/dialogStyle">
 </activity>
+</code>
 </pre>
-<pre class="prettyprint lang-xml>
+<pre>
+<code class="language-xml">
 <style name="dialogStyle" parent="@android:style/Theme.Dialog">
     <item name="android:windowFrame">@android:color/transparent</item>
     <item name="android:windowIsFloating">true</item>
@@ -488,5 +499,6 @@ public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter
     <item name="android:windowBackground">@android:color/transparent</item>
     <item name="android:windowAnimationStyle">@null</item>
 </style>
+</code>
 </pre>
 第一次贴代码，有些乱,凑合着看～
