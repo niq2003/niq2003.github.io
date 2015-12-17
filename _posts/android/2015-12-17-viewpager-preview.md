@@ -16,7 +16,7 @@ excerpt: ViewPager 图片预览。
 直接上代码
 
 继承GestureImageView，增加显示，消失过渡效果
-```javascript
+<pre>
 import android.animation.Animator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
@@ -158,10 +158,10 @@ public class FadingGestureImageView extends GestureImageView {
     }
 
 }
-```
+</pre>
 
 弹出的预览框，用Activity实现,里面的[ReboundViewPager](http://niq2003.github.io/2015/11/26/viewpager-preview/)可换成ViewPager。
-```javascript
+<pre>
 /**
  * 图片预览
  */
@@ -329,9 +329,9 @@ public class ImagePreviewActivity extends Activity {
         finish();
     }
   }
-```
+</pre>
 布局文件：image_preview_layout
-```xml
+<pre>
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -380,8 +380,8 @@ public class ImagePreviewActivity extends Activity {
         android:textColor="@color/c3"/>
 
 </RelativeLayout>
-```
-```javascript
+</pre>
+<pre>
 public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter.ViewHolder> implements GestureController.OnGestureListener {
 
     private static final String TAG = ImagePreviewAdapter.class.getSimpleName();
@@ -486,15 +486,15 @@ public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter
         return mImageView;
     }
 }
-```
+</pre>
 最后将ImagePreViewActivity的theme设置成dialog的样式
-```xml
+<pre>
 <activity
     android:name="ImagePreviewActivity"
     android:screenOrientation="portrait"
     android:theme="@style/dialogStyle" />
-```
-```xml
+</pre>
+<pre>
 <style name="dialogStyle" parent="@android:style/Theme.Dialog">
     <item name="android:windowFrame">@android:color/transparent</item>
     <item name="android:windowIsFloating">true</item>
@@ -503,5 +503,5 @@ public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter
     <item name="android:windowBackground">@android:color/transparent</item>
     <item name="android:windowAnimationStyle">@null</item>
 </style>
-```
+</pre>
 第一次贴代码，有些乱,凑合着看～
