@@ -161,7 +161,7 @@ public class FadingGestureImageView extends GestureImageView {
 </pre>
 
 弹出的预览框，用Activity实现,里面的[ReboundViewPager](http://niq2003.github.io/2015/11/26/viewpager-preview/)可换成ViewPager。
-<pre>
+<pre class="prettyprint lang-java">
 /**
  * 图片预览
  */
@@ -331,7 +331,7 @@ public class ImagePreviewActivity extends Activity {
   }
 </pre>
 布局文件：image_preview_layout
-<pre>
+<pre class="prettyprint lang-xml">
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -381,7 +381,7 @@ public class ImagePreviewActivity extends Activity {
 
 </RelativeLayout>
 </pre>
-<pre>
+<pre class="prettyprint lang-java">
 public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter.ViewHolder> implements GestureController.OnGestureListener {
 
     private static final String TAG = ImagePreviewAdapter.class.getSimpleName();
@@ -488,13 +488,13 @@ public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter
 }
 </pre>
 最后将ImagePreViewActivity的theme设置成dialog的样式
-<pre>
+<pre class="prettyprint lang-xml">
 <activity
     android:name="ImagePreviewActivity"
     android:screenOrientation="portrait"
     android:theme="@style/dialogStyle" />
 </pre>
-<pre>
+<pre class="prettyprint lang-xml>
 <style name="dialogStyle" parent="@android:style/Theme.Dialog">
     <item name="android:windowFrame">@android:color/transparent</item>
     <item name="android:windowIsFloating">true</item>
