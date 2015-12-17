@@ -331,7 +331,7 @@ public class ImagePreviewActivity extends Activity {
   }
 ```
 布局文件：image_preview_layout
-```javascript
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -488,13 +488,13 @@ public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter
 }
 ```
 最后将ImagePreViewActivity的theme设置成dialog的样式
-```javascript
+```xml
 <activity
     android:name="ImagePreviewActivity"
     android:screenOrientation="portrait"
     android:theme="@style/dialogStyle" />
 ```
-```javascript
+```xml
 <style name="dialogStyle" parent="@android:style/Theme.Dialog">
     <item name="android:windowFrame">@android:color/transparent</item>
     <item name="android:windowIsFloating">true</item>
