@@ -380,7 +380,6 @@ public class ImagePreviewActivity extends Activity {
         android:textColor="@color/c3"/>
 
 </RelativeLayout>
-
 ```
 ```javascript
 public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter.ViewHolder> implements GestureController.OnGestureListener {
@@ -489,13 +488,13 @@ public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter
 }
 ```
 最后将ImagePreViewActivity的theme设置成dialog的样式
-```xml
+```javascript
 <activity
     android:name="ImagePreviewActivity"
     android:screenOrientation="portrait"
     android:theme="@style/dialogStyle" />
 ```
-```xml
+```javascript
 <style name="dialogStyle" parent="@android:style/Theme.Dialog">
     <item name="android:windowFrame">@android:color/transparent</item>
     <item name="android:windowIsFloating">true</item>
