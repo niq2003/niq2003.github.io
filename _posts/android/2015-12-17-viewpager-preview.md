@@ -16,7 +16,7 @@ excerpt: ViewPager 图片预览。
 直接上代码
 
 继承GestureImageView，增加显示，消失过渡效果
-<pre>
+<code class="language-java">
 import android.animation.Animator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
@@ -158,7 +158,7 @@ public class FadingGestureImageView extends GestureImageView {
     }
 
 }
-</pre>
+</code>
 
 弹出的预览框，用Activity实现,里面的[ReboundViewPager](http://niq2003.github.io/2015/11/26/viewpager-preview/)可换成ViewPager。
 <pre class="prettyprint lang-java">
