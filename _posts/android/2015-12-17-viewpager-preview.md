@@ -348,23 +348,22 @@ excerpt: ViewPager 图片预览。
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="@dimen/d_7"
+            android:padding="7dp"
             android:layout_alignParentRight="true"
             android:visibility="gone">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/icon_home_pull"
-                android:rotation="-90"/>
+                android:src="@drawable/icon_home_pull"/>
 
             <TextView
-                android:layout_width="@dimen/t7"
+                android:layout_width="10sp"
                 android:layout_height="wrap_content"
-                android:text="@string/release_tip"
-                android:textSize="@dimen/t7"
-                android:textColor="@color/c6"
-                android:layout_marginLeft="@dimen/d_7"/>
+                android:text="释放查看图文详情"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginLeft="7dp"/>
 
         </LinearLayout>
 
@@ -376,8 +375,8 @@ excerpt: ViewPager 图片预览。
             android:layout_alignParentRight="true"
             android:layout_marginRight="28dp"
             android:layout_marginBottom="24dp"
-            android:textSize="@dimen/t1"
-            android:textColor="@color/c3"/>
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
 
     </RelativeLayout>
 
