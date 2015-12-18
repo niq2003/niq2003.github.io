@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "善用车轮之图片预览"
+title:  "善用轮子之图片预览"
 date:   2015-12-17 15:39:24
 categories: Android
 excerpt: ViewPager 图片预览。
@@ -335,9 +335,7 @@ public class ImagePreviewActivity extends Activity {
 </code>
 </pre>
 布局文件：image_preview_layout
-<pre>
-<code class="language-xml">
-<?xml version="1.0" encoding="utf-8"?>
+```xml
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -385,9 +383,7 @@ public class ImagePreviewActivity extends Activity {
         android:textColor="@color/c3"/>
 
 </RelativeLayout>
-</code>
-</pre>
-
+```
 <pre>
 <code class="language-java">
 public class ImagePreviewAdapter extends RecyclePagerAdapter<ImagePreviewAdapter.ViewHolder> implements GestureController.OnGestureListener {

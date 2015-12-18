@@ -13,6 +13,7 @@ description: Manone的博客 中老年码农
 github_username:  niq2003
 permalink: /:year/:month/:day/:title/
 
+gems: [jekyll-paginate]
 # Build settings
 markdown: kramdown
 
