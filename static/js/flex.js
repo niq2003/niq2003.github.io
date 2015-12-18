@@ -25,7 +25,7 @@ var myApp = function(){
 		initContext:initContext,
 		drawBG:function(){
 			context.globalCompositeOperation = "destination-over";
-			context.fillStyle = "RGBA(69,69,70,0.5)";
+			context.fillStyle = "RGBA(69,69,70,0.2)";
 			context.strokeStyle = "RGB(112,170,50)";
 			context.lineWidth = 2;
 			context.fillRect(-canvas.width/2,-canvas.height/2,canvas.width,canvas.height);
