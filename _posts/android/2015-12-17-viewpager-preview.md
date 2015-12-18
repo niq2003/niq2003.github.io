@@ -159,14 +159,18 @@ excerpt: ViewPager 图片预览。
 
     }
 
-弹出的预览框，用Activity实现,里面的[ReboundViewPager](http://niq2003.github.io/2015/11/26/viewpager-preview/)可换成ViewPager。
+弹出的预览框，用Activity实现,里面的[ReboundViewPager](../../18/rebound-viewpager)可换成ViewPager。
 
     public class ImagePreviewActivity extends Activity {
-
+        //ViewPager显示图片的数据
         public static final String KEY_IMAGE_URLS = "key_preview_image_urls";
+        //图片预览的默认下标
         public static final String KEY_IMAGE_POSITION = "key_preview_image_position";
+        //是否显示页码，如1/10, 2/10
         public static final String KEY_SHOW_INDICATOR = "key_show_image_indicator";
+        //是否显示左滑到底后继续滑动的提示
         public static final String KEY_SHOW_DRAG_TIP = "key_show_drag_tip";
+        //打开图片预览的request code
         public static final int REQUESTCODE_IMAGE_PREVIEW = 1;
 
         private static int mOverscrollTranslation;
