@@ -489,4 +489,13 @@ style文件中加入
         <item name="android:windowAnimationStyle">@null</item>
     </style>
 
+使用方法
+
+    Intent intent = new Intent(context, ImagePreviewActivity.class);
+    intent.putExtra(ImagePreviewActivity.KEY_IMAGE_URLS, urls);
+    intent.putExtra(ImagePreviewActivity.KEY_IMAGE_POSITION, position);
+    intent.putExtra(ImagePreviewActivity.KEY_SHOW_INDICATOR, showIndicator);
+    intent.putExtra(ImagePreviewActivity.KEY_SHOW_DRAG_TIP, showDragTip);
+    context.startActivityForResult(intent, ImagePreviewActivity.REQUESTCODE_IMAGE_PREVIEW);
+
 第一次贴代码，有些乱,凑合着看～
