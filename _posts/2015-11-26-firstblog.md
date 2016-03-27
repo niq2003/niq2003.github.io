@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "First Blog"
-date:   2015-11-26 14:17:14
+date:   2015-11-26 14:17:14 +0800
 categories: GitHub
 excerpt: 第一篇Github博客。
 ---

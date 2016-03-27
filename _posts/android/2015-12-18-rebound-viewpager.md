@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "善用轮子之ViewPager继续滑动查看XXX"
-date:   2015-12-18 12:50:25
+date:   2015-12-18 12:50:25 +0800
 categories: Android
 excerpt: ViewPager 继续滑动 pull to next。
 ---

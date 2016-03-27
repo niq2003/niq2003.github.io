@@ -1,12 +1,10 @@
 ---
 layout: post
-title: ViewPager图片点击预览
-date: {}
+title:  "善用轮子之图片预览"
+date:   2015-12-17 15:39:24 +0800
 categories: Android
 excerpt: ViewPager 图片预览。
-published: true
 ---
-
 
 * content
 {:toc}
